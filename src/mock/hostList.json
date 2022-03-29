@@ -1,0 +1,31 @@
+[
+    {
+        "hotTitle": [
+            "热门排行",
+            "热门商品",
+            "热门排行"
+        ],
+        "list": [
+            {
+                "imgSrc": "/images/1.jpg",
+                "title": "【官网价直降1100】Apple iPhone 8 Plus 256GB 银色 移动联通电信4G手机",
+                "price": "100.00"
+            },
+            {
+                "imgSrc": "/images/1.jpg",
+                "title": "【官网价直降1100】Apple iPhone 8 Plus 256GB 银色 移动联通电信4G手机",
+                "price": "100.00"
+            },
+            {
+                "imgSrc": "/images/1.jpg",
+                "title": "【官网价直降1100】Apple iPhone 8 Plus 256GB 银色 移动联通电信4G手机",
+                "price": "100.00"
+            },
+            {
+                "imgSrc": "/images/1.jpg",
+                "title": "【官网价直降1100】Apple iPhone 8 Plus 256GB 银色 移动联通电信4G手机",
+                "price": "100.00"
+            }
+        ]
+    }
+]
