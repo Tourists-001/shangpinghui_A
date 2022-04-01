@@ -92,7 +92,9 @@ export default {
         phone &&
           password &&
           (await this.$store.dispatch("userLogin", { phone, password }));
-        this.$router.push("/home");
+        //   在路由守卫中存储要去的页面，当登录后，取到query里的参数 直接push
+          let toPath = this.$route.query.redirect || '/home'
+        this.$router.push(toPath);
       } catch (error) {
         alert(error);
       }

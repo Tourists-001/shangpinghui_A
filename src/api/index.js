@@ -125,7 +125,46 @@ export const reqLoginOut = async () => {
 // 获取用户地址信息
 export const reqAddressInfo = async () => {
     return await requests({
-        url: '/user/uerAddress/auth/findUserAddressList',
+        url: '/user/userAddress/auth/findUserAddressList',
+        method: 'get'
+    })
+}
+// 获取商品清单
+export const reqOrderInfo = async () => {
+    return await requests({
+        url: '/order/auth/trade',
+        method: 'get',
+    })
+}
+
+// 提交订单的接口
+export const reqSubmitOrder = async (tradeNo, data) => {
+    return await requests({
+        url: `/order/auth/submitOrder?tradeNo=${tradeNo}`,
+        data,
+        method: 'post'
+    })
+}
+// 获取支付信息
+export const reqPayInfo = async (orderId) => {
+    return await requests({
+        url: `/payment/weixin/createNative/${orderId}`,
+        method: 'get',
+    })
+}
+
+// 获取订单支付状态
+export const reqPayStatus = async (orderId) => {
+    return await requests({
+        url: `/payment/weixin/queryPayStatus/${orderId}`,
+        method: 'get'
+    })
+}
+
+// 获取个人中心的信息
+export const reqMyOrderList = async (page, limit) => {
+    return await requests({
+        url: `/order/auth/${page}/${limit}`,
         method: 'get'
     })
 }
